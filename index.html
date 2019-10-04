@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -15,204 +16,318 @@
 <body>
 
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Olivier CHARON</a>
+    
+    <h1 id="top-title">Olivier CHARON <br> Développeur Full Stack</h1>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
+        <a class="navbar-brand" href="#top-title">Olivier CHARON</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#"> Qui suis-je? <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">Mes languages</a>
-                <a class="nav-item nav-link" href="#">Mes frameworks</a>
-                <a class="nav-item nav-link" href="#">Quelques exemples</a>
-                <a class="nav-item nav-link" href="#">Parlons de vous</a>
+        <div class="navbar-nav collapse navbar-collapse justify-content-center">
+            <div class="d-flex">
+                <a class="nav-item nav-link active" href="#description"> Qui suis-je? <span
+                        class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#langages">Mes langages</a>
+                <a class="nav-item nav-link" href="#frameworks">Mes frameworks</a>
+                <a class="nav-item nav-link" href="#examples">Quelques exemples</a>
+                <a class="nav-item nav-link" href="#contact-form">Parlons de vous</a>
             </div>
         </div>
     </nav>
 </header>
 
 <main>
-    <h1>Olivier CHARON <br> Développeur Full Stack</h1>
-    
+    <!--Titre-->
+    <div class="row">
+        <div class="title-div col-md-12">
+            <h2>Qui suis-je?</h2>
+        </div>
+    </div>
     <!-- Qui suis-je? -->
-    <article class="row">
-        <div class="col-md-12">
-            <!--Titre-->
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>Qui suis-je?</h2>
+    <article class="row topdiv" id="description">
+        <div class="col-md-12 " id="description-content">
+            <div class="row article-content ">
+                <div class="text-content col-md-8">
+                    <div class="row description-line">
+                        <div class="col-md-12">
+                            <p>
+                                Ca, c'est moi! Un jeune travailleur de 25 ans, lyonnais profitant des berges naturelles
+                                de Gerland, et passioné d'Esport. Mais je n'ai pas toujours été cet homme sympa et
+                                respecté... <br> Jadis, durant 2 longues années, je fus... BANQUIER. Alors oui, je suis
+                                désolé, j'étais le grand méchant de l'histoire! <br><br> Mais je me suis repentis
+                                depuis! Celà fait à présent 1 an et demi que je suis passé du coté lumineux de la force:
+                                le développement web. <br> En tant que padawan, j'eu fait mes armes chez <a
+                                    target="_blank"
+                                    href="https://www.grandeecolenumerique.fr/formations/developpeur-webapplications-mobiles">Human
+                                Booster</a>. PHP, Javascript, Babyfoot,... rien ne m'échapait! <br><br>Puis, sur mon
+                                chemin de rédemption, je fus la rencontre d'une chouette école du numérique, me
+                                permettant de travailler pour m'accomplir en alternance, l'<a target="_blank"
+                                                                                              href="https://www.it-akademy.fr/formation/developpeur-fullstack">IT
+                                Akademy</a>. A partir de ce moment là, ma soiffe de savoir ne cessait d'être comblée:
+                                ReactJS, NodeJS, Symfony, Laravel, Python, et même Wix!... bon, un intrus s'est glissé
+                                dans la liste précédente: vous aurez deviné lequel! En tout cas, si vous voulez en
+                                savoir plus à mon sujet, n'hésitez pas tapoter ma petitie tête avec votre souris, et/ou
+                                à me contacter par le formulaire en bas de page. Bonne visite!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="top-page-div col-md-12">
+                                    <a href="#top-title">Haut de page</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col-md-3 profile-picture-container">
+                    <img src="content/me.png" class="profile-picture" alt="Olivier Charon" title="Ca, c'est moi!">
+                    <div class="hover-btn-container">
+                        <a href="https://github.com/OlivierCharon" target="_blank">
+                            <div>Mon parcours</div>
+                        </a>
+                    </div>
                 </div>
             </div>
-            
-            <!--Texte qui dépendra de l'icone actif-->
-            <div class="row">
-                <div class="col-md-8">
+        </div>
+        </div>
+    </article>
+    
+    <!--Titre-->
+    <div class="row">
+        <div class="title-div col-md-12">
+            <h2>Mes langages</h2>
+        </div>
+    </div>
+    <!-- Mes langages -->
+    <article class="row" id="languages">
+        <div class="col-md-12">
+            <div class="row article-content language-list">
+                <div class="text-content col-md-5">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                        ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum.
+                        Le JavaScript est un langage informatique utilisé sur les pages web. Ce langage à la
+                        particularité de s'activer sur le poste client, en d'autres mots c'est votre ordinateur qui va
+                        recevoir le code et qui devra l'exécuter. C'est en opposition à d'autres langages qui sont
+                        activé côté serveur. L'exécution du code est effectué par votre navigateur internet tel que
+                        Firefox ou Internet Explorer.
                     </p>
                 </div>
-                <div class="col-md-4">
-                    <img src="" alt="Olivier Charon" title="Ca, c'est moi!">
+                <div class="col-md-2 language-icon-container">
+                    <img src="content/js.png" class="language-icon" alt="Olivier Charon" title="Ca, c'est moi!">
+                </div>
+            
+            </div>
+            
+            <div class="row article-content language-list">
+                <div class="text-content col-md-5">
+                    <p>
+                        Le PHP est un langage informatique utilisé sur l'internet. Le terme PHP est un acronyme récursif
+                        de "PHP: Hypertext Preprocessor".
+                        
+                        Ce langage est principalement utilisé pour produire un site web dynamique. Il est courant que ce
+                        langage soit associé à une base de données, tel que MySQL.
+                        Exécuté du côté serveur (l'endroit où est hébergé le site) il n'y a pas besoin aux visiteurs
+                        d'avoir des logiciels ou plugins particulier. Néanmoins, les webmasters qui souhaitent
+                        développer un site en PHP doivent s'assurer que l'hébergeur prend en compte ce langage.
+                    </p>
+                </div>
+                <div class="col-md-2 language-icon-container">
+                    <img src="content/php.svg" class="language-icon" alt="Olivier Charon" title="Ca, c'est moi!">
+                </div>
+            
+            </div>
+            
+            <div class="row article-content language-list">
+                <div class="text-content col-md-5">
+                    <p>
+                        Python est un langage de programmation interprété, multi-paradigme et multiplateformes. Il
+                        favorise la programmation impérative structurée, fonctionnelle et orientée objet. Il est doté
+                        d'un typage dynamique fort, d'une gestion automatique de la mémoire par ramasse-miettes et d'un
+                        système de gestion d'exceptions ; il est ainsi similaire à Perl, Ruby, Scheme, Smalltalk et Tcl.
+                    </p>
+                </div>
+                <div class="col-md-2 language-icon-container">
+                    <img src="content/python.png" class="language-icon" alt="Olivier Charon" title="Ca, c'est moi!">
+                </div>
+            
+            </div>
+            
+            
+            <div class="row">
+                <div class="top-page-div col-md-12">
+                    <a href="#top-title">Haut de page</a>
                 </div>
             </div>
         </div>
     </article>
     
-    <!-- Mes languages -->
-    <article class="row">
-        <div class="col-md-12">
-            <!--Titre-->
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>Mes languages</h2>
-                </div>
-            </div>
-            
-            <!--Icones de languages-->
-            <div class="row">
-                <div class="col-md-3 active">
-                    <img src="" alt="">
-                </div>
-                <div class="col-md-3">
-                    <img src="" alt="">
-                </div>
-                <div class="col-md-3">
-                    <img src="" alt="">
-                </div>
-                <div class="col-md-3">
-                    <img src="" alt="">
-                </div>
-            </div>
-            
-            <!--Texte qui dépendra de l'icone actif-->
-            <div class="row">
-                <div class="col-md-12">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                        ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-            </div>
+    <!--Titre-->
+    <div class="row">
+        <div class="title-div col-md-12">
+            <h2>Mes frameworks</h2>
         </div>
-    </article>
-    
+    </div>
     <!-- Mes frameworks -->
-    <article class="row">
+    <article class="row" id="frameworks">
         <div class="col-md-12">
-            <!--Titre-->
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>Mes frameworks</h2>
+            <!--Icones de langages-->
+            <div class="row large">
+                <div class="col-3 active framework-icon-container" id="symfony-icon-container">
+                    <img src="content/symfony.png" alt="Symfony" class="framework-icon" id="symfony">
+                </div>
+                <div class="col-3 framework-icon-container" id="laravel-icon-container">
+                    <img src="content/laravel.png" alt="Laravel" class="framework-icon" id="laravel">
+                </div>
+                <div class="col-3 framework-icon-container" id="angular-icon-container">
+                    <img src="content/angular.png" alt="Angular" class="framework-icon" id="angular">
+                </div>
+                <div class="col-3 framework-icon-container" id="react-icon-container">
+                    <img src="content/reactjs.png" alt="React" class="framework-icon" id="react">
                 </div>
             </div>
             
-            <!--Icones de languages-->
-            <div class="row">
-                <div class="col-md-3 active">
-                    <img src="" alt="">
-                </div>
-                <div class="col-md-3">
-                    <img src="" alt="">
-                </div>
-                <div class="col-md-3">
-                    <img src="" alt="">
-                </div>
-                <div class="col-md-3">
-                    <img src="" alt="">
-                </div>
-            </div>
-            
-            <!--Texte qui dépendra de l'icone actif-->
             <div class="row">
                 <div class="col-md-12">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                        ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
+                    <div class="col-md-12 text-content displayed" id="framework-desc">
+                        <p>
+                            Symfony est un framework qui représente un ensemble de composants (aussi appelés librairies)
+                            PHP autonomes qui peuvent être utilisés dans des projets web privé ou open source. Mais
+                            c’est également un puissant Framework PHP développé par une société française : SensioLabs.
+                            Il permet de réaliser des sites internet dynamiques de manière rapide, structurée, et avec
+                            un développement clair. Les développeurs peuvent travailler sur ce Framework très
+                            facilement, seuls ou en équipe, grâce à la facilité de prise en main.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="top-page-div col-md-12">
+                    <a href="#top-title">Haut de page</a>
                 </div>
             </div>
         </div>
     </article>
     
+    <!--Titre-->
+    <div class="row">
+        <div class="title-div col-md-12">
+            <h2>Quelques exemples</h2>
+        </div>
+    </div>
+    <!-- Exemples -->
+    <article class="row" id="examples">
+        <div class="col-md-12">
+            <div class="row" id="examples-list">
+                <div class="card bg-light border-dark mb-3" style="max-width: 20rem;">
+                    <div class="card-header">
+                        <img src="content/html_css.png" class="card-img-top" alt="...">
+                    </div>
+        
+                    <div class="card-body">
+                        <h4 class="card-title">HTML / CSS</h4>
+                        <p class="card-text">Voici le projet en webstatic que j'eu à réaliser en Octobre 2019.</p>
+                    </div>
+        
+                    <div class="card-body">
+                        <a href="#" class="card-link">Voir sur Github</a>
+                    </div>
+                </div>
+                <div class="card bg-light border-dark mb-3" style="max-width: 20rem;">
+                    <div class="card-header">
+                        <img src="content/html_css.png" class="card-img-top" alt="...">
+                    </div>
+        
+                    <div class="card-body">
+                        <h4 class="card-title">HTML / CSS</h4>
+                        <p class="card-text">Voici le projet en webstatic que j'eu à réaliser en Octobre 2019.</p>
+                    </div>
+        
+                    <div class="card-body">
+                        <a href="#" class="card-link">Voir sur Github</a>
+                    </div>
+                </div>
+                <div class="card bg-light border-dark mb-3" style="max-width: 20rem;">
+                    <div class="card-header">
+                        <img src="content/html_css.png" class="card-img-top" alt="...">
+                    </div>
+        
+                    <div class="card-body">
+                        <h4 class="card-title">HTML / CSS</h4>
+                        <p class="card-text">Voici le projet en webstatic que j'eu à réaliser en Octobre 2019.</p>
+                    </div>
+        
+                    <div class="card-body">
+                        <a href="#" class="card-link">Voir sur Github</a>
+                    </div>
+                </div>
+               
+            </div>
+            
+            <div class="row">
+                <div class="top-page-div col-md-12">
+                    <a href="#top-title">Haut de page</a>
+                </div>
+            </div>
+        </div>
+    </article>
+    
+    <!--Titre-->
+    <div class="row">
+        <div class="title-div col-md-12">
+            <h2>Parlons de vous</h2>
+        </div>
+    </div>
     <!-- Parlons de vous -->
-    <article class="row">
+    <article class="row" id="contact-form">
         <div class="col-md-12">
-            <!--Titre-->
             <div class="row">
-                <div class="col-md-12">
-                    <h2>Parlons de vous</h2>
+                <div class="col-md-6">
+                    <form action="#">
+                        <label for="fname">Prénom</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Votre prénom..">
+                        
+                        <label for="lname">Nom</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Votre nom..">
+                        
+                        <label for="subject">Votre message</label>
+                        <textarea id="subject" name="subject" placeholder="Ecrivez quelque chose.."
+                                  style="height:200px"></textarea>
+                        
+                        <input type="submit" value="Submit">
+                    </form>
                 </div>
             </div>
-            
-            <!--Icones de languages-->
             <div class="row">
-                <div class="col-md-3 active">
-                    <img src="" alt="">
-                </div>
-                <div class="col-md-3">
-                    <img src="" alt="">
-                </div>
-                <div class="col-md-3">
-                    <img src="" alt="">
-                </div>
-                <div class="col-md-3">
-                    <img src="" alt="">
-                </div>
-            </div>
-            
-            <!--Texte qui dépendra de l'icone actif-->
-            <div class="row">
-                <div class="col-md-12">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                        ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
+                <div class="top-page-div col-md-12">
+                    <a href="#top-title">Haut de page</a>
                 </div>
             </div>
         </div>
     </article>
-    
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
 </main>
 
 <footer id="bg-dark">
-    <p class="text-center">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-        culpa qui officia deserunt mollit anim id est laborum.
+    <p>
+        Ce site a été imaginé et développé par <a href="https://github.com/OlivierCharon" target="_blank"> Olivier
+        Charon</a> <br> Toute copie, utilisation commerciale ou note au dessous de 100% est passible de poursuites
+        pénales
     </p>
 </footer>
-
+<script src="js/font_awesome.js"></script>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="jquery/jquery-3.4.1.min.js"></script>
+<script src="jquery/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
