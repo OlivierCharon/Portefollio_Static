@@ -1,5 +1,3 @@
-
-
 // NAVBAR FIXE
 
 
@@ -16,20 +14,11 @@ function myFunction() {
 
 // CLASSE ACTIVE ON SCROLL
 
-let mainNavLinks = document.querySelectorAll("nav div a");
+let mainNavLinks = document.querySelectorAll("nav div div a");
 let mainSections = document.querySelectorAll("main article");
 
 let lastId;
 let cur = [];
-
-// This should probably be throttled.
-// Especially because it triggers during smooth scrolling.
-// https://lodash.com/docs/4.17.10#throttle
-// You could do like...
-// window.addEventListener("scroll", () => {
-//    _.throttle(doThatStuff, 100);
-// });
-// Only not doing it here to keep this Pen dependency-free.
 
 window.addEventListener("scroll", event => {
     let fromTop = window.scrollY;
@@ -54,7 +43,6 @@ window.addEventListener("scroll", event => {
 mybutton = document.getElementById("myBtn");
 
 
-
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         mybutton.style.display = "block";
@@ -69,4 +57,7 @@ function topFunction() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-window.onscroll = function() {myFunction();scrollFunction()};
+window.onscroll = function () {
+    myFunction();
+    scrollFunction()
+};

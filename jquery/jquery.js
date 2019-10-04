@@ -37,22 +37,6 @@ $('a[href*="#"]')
         }
     });
 
-// ANIMATIONS AU SCROLL
-
-$(window).scroll(function () {
-    console.log($(window).scrollTop());
-    var topDivHeight = $(".topdiv").height();
-    var viewPortSize = $(window).height();
-
-    var triggerAt = 150;
-    var triggerHeight = (topDivHeight - viewPortSize) + triggerAt;
-
-    if ($(window).scrollTop() >= triggerHeight) {
-        $('.fadethisdiv').css('visibility', 'visible').hide().fadeIn();
-        $(this).off('scroll');
-    }
-});
-
 // ANIMATION POUR FAIRE APPARAITRE LA DESCRIPTION DES FRAMEWORKS
 var symfonyText = "Symfony est un framework qui représente un ensemble de composants (aussi appelés librairies) PHP autonomes qui peuvent être utilisés dans des projets web privé ou open source. Mais c’est également un puissant Framework PHP développé par une société française : SensioLabs. Il permet de réaliser des sites internet dynamiques de manière rapide, structurée, et avec un développement clair. Les développeurs peuvent travailler sur ce Framework très facilement, seuls ou en équipe, grâce à la facilité de prise en main.";
 
